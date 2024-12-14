@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="High Prophet of Dignity" hidden="false" id="3b57-446c-594d-8c85">
       <categoryLinks>
@@ -206,72 +206,6 @@ The options available for attachment are:
         <cost name="Military Power" typeId="b191-77aa-fc76-00cd" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mgalekgolo Bonded Pair" hidden="false" id="4eb9-1502-c5bf-ab85">
-      <categoryLinks>
-        <categoryLink name="Monster" hidden="false" id="d617-3c3a-56ce-1dc4" targetId="9693-cf84-fe69-37a9" primary="true"/>
-        <categoryLink name="Walker" hidden="false" id="2032-7170-f5df-4cad" targetId="6dda-e157-334d-e93a" primary="false"/>
-        <categoryLink name="Lekgolo" hidden="false" id="d194-4b5a-efd7-2a64" targetId="ac81-630f-bc46-8571" primary="false"/>
-        <categoryLink name="Faction: Covenant Hegemony" hidden="false" id="8faa-99d2-df7f-8ba7" targetId="39fd-e63f-f604-efb6" primary="false"/>
-        <categoryLink name="Mgalekgolo" hidden="false" id="b54d-0b95-87f2-0d56" targetId="8875-82e0-4726-740c" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Composition" id="06c1-cdae-5b3c-05ca" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2098-57aa-b200-9623"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d8a-2a0a-9a65-f83f"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="One Mgalekgolo Bonded Pair" hidden="false" id="7eec-e0c0-4be6-624b">
-              <entryLinks>
-                <entryLink import="true" name="Mgalekgolo" hidden="false" id="877b-4649-b8c4-61e7" type="selectionEntry" targetId="d13f-f8e6-fbf4-d959">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="67a0-4256-4b54-7216"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bdae-b5cd-8ae5-1e85"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Two Mgalekgolo Bonded Pair" hidden="false" id="6138-573d-d87e-0d81">
-              <entryLinks>
-                <entryLink import="true" name="Mgalekgolo" hidden="false" id="9134-def6-a67e-a192" type="selectionEntry" targetId="d13f-f8e6-fbf4-d959">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="e8ea-e07c-3ea1-7a0e"/>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c1d9-ec71-eecc-1062"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value=" Mgalekgolo Pair A" field="name"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Mgalekgolo" hidden="false" id="4995-337d-00a8-e757" type="selectionEntry" targetId="d13f-f8e6-fbf4-d959">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="3dd4-91b4-6d85-85a4"/>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1062-7dd5-fd81-9bfc"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value=" Mgalekgolo Pair B" field="name"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="d605-068e-5db5-d04c" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-        <cost name="Diplomatic Power" typeId="cc2f-7d46-da1c-9972" value="0"/>
-        <cost name="Military Power" typeId="b191-77aa-fc76-00cd" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Those Who Walk the Path" id="03cb-5741-0c0f-b4c0" hidden="false" type="rule" targetId="410c-d799-a566-88ca"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin Assault cannon (Automatic fire)" hidden="false" id="d7ea-2a98-5df2-9f96">
       <profiles>
         <profile name="Assault cannon (Automatic fire)" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e69f-ade1-469b-5c33">
@@ -282,7 +216,7 @@ The options available for attachment are:
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Lethal Hits, Rapid Fire, Sustained Hits, Twin-Linked</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Assault, Lethal Hits, Rapid Fire, Sustained Hits, Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -292,6 +226,7 @@ The options available for attachment are:
         <infoLink name="Twin-linked" id="a8a9-f7bb-9466-af0d" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
         <infoLink name="Anti-" id="567d-8f7e-89c3-e009" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
         <infoLink name="Sustained Hits" id="b385-df87-0624-4436" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Assault" id="43e7-f5d3-06a5-8944" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin Assault cannon (Continuous Stream)" hidden="false" id="614a-9c62-2d29-69d0">
@@ -304,7 +239,7 @@ The options available for attachment are:
             <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire D6, Torrent, Twin-Linked</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire D6, Torrent, Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -312,6 +247,7 @@ The options available for attachment are:
         <infoLink name="Rapid Fire" id="8288-0336-cf9b-2e72" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
         <infoLink name="Torrent" id="c93e-310d-7daa-13a6" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
         <infoLink name="Twin-linked" id="2f55-d47b-2fde-defa" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+        <infoLink name="Assault" id="123b-6465-a58b-9c77" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Assault cannon (Single Bolts)" hidden="false" id="c619-37e1-d9aa-cfa4">
@@ -324,7 +260,7 @@ The options available for attachment are:
             <characteristic name="S" typeId="2229-f494-25db-c5d3">19</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 2+, Blast, Devastating Wounds, Heavy</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 2+, Assault, Blast, Devastating Wounds, Heavy</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -333,6 +269,7 @@ The options available for attachment are:
         <infoLink name="Blast" id="d10d-68e2-b2ae-c292" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
         <infoLink name="Devastating Wounds" id="c3a7-cbbd-ef5e-31a2" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
         <infoLink name="Heavy" id="4665-63d1-63f8-f198" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Assault" id="03b7-f83e-4413-32d5" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Assault cannon (Automatic fire)" hidden="false" id="bce9-dbaa-ef4c-0fa1">
@@ -345,7 +282,7 @@ The options available for attachment are:
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Heavy, Lethal Hits, Rapid Fire, Sustained Hits</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Assault, Heavy, Lethal Hits, Rapid Fire, Sustained Hits</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -355,6 +292,7 @@ The options available for attachment are:
         <infoLink name="Anti-" id="9d5d-e23c-0593-6de6" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
         <infoLink name="Sustained Hits" id="c2ee-b38d-d748-382b" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
         <infoLink name="Heavy" id="3b72-8604-336c-06b1" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Assault" id="743f-abba-b238-9823" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Assault cannon (Continuous Stream)" hidden="false" id="e367-fb3f-64e5-b525">
@@ -367,7 +305,7 @@ The options available for attachment are:
             <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire D6, Heavy, Torrent, Twin-Linked</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire D6, Heavy, Torrent, Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -375,6 +313,7 @@ The options available for attachment are:
         <infoLink name="Rapid Fire" id="5b17-3efd-165a-4718" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
         <infoLink name="Torrent" id="9135-463c-3285-ef39" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
         <infoLink name="Heavy" id="7464-e60a-dd30-799b" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Assault" id="2427-ad81-16f4-352f" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin Assault cannon (Single Bolts)" hidden="false" id="3881-80f4-32f9-51cd">
@@ -387,7 +326,7 @@ The options available for attachment are:
             <characteristic name="S" typeId="2229-f494-25db-c5d3">19</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 2+, Blast, Devastating Wounds</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 2+, Assault, Blast, Devastating Wounds</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -395,6 +334,7 @@ The options available for attachment are:
         <infoLink name="Anti-" id="de8f-ce0a-d6da-e3f7" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
         <infoLink name="Blast" id="faa4-30c4-d8d4-e6d2" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
         <infoLink name="Devastating Wounds" id="5abe-9dd8-7ac4-58b9" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Assault" id="43a2-b613-0f7d-c1da" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two-Ton Nanolaminate Pavise Shield " hidden="false" id="c9f1-3f71-ba57-c3b4">
@@ -525,54 +465,7 @@ The options available for attachment are:
         <infoLink name="Lethal Hits" id="4449-0e7c-c804-9628" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Mgalekgolo" hidden="false" id="d13f-f8e6-fbf4-d959">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="War Gear Options" id="f62d-9d2c-63c4-b8d6" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Ranged Weapon Option" id="a25e-77b1-4fb6-b6ad" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Assault cannon (Automatic fire)" hidden="false" id="106c-5512-529a-9ef3" type="selectionEntry" targetId="bce9-dbaa-ef4c-0fa1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="053a-50df-0e50-1670" includeChildSelections="true"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Assault cannon (Continuous Stream)" hidden="false" id="95e5-2a67-9ed6-91f0" type="selectionEntry" targetId="e367-fb3f-64e5-b525">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a03c-4774-5bc9-8b19" includeChildSelections="true"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Assault cannon (Single Bolts)" hidden="false" id="996b-6ba0-c922-60fc" type="selectionEntry" targetId="c619-37e1-d9aa-cfa4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1287-58ad-4015-109e" includeChildSelections="true"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3c-e8ae-1f0f-9e44"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41d0-b004-47fd-2c1b"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Melee Weapon Option" id="934c-b412-021b-22e0" hidden="false">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28b2-9237-555a-8d81"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e442-d69e-dfa2-6236"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Two-Ton Nanolaminate Pavise Shield " hidden="false" id="eaeb-75bc-413e-7eab" type="selectionEntry" targetId="c9f1-3f71-ba57-c3b4"/>
-                <entryLink import="true" name="Two-Ton Nanolaminate Turtle Shield" hidden="false" id="ec05-be59-730f-b745" type="selectionEntry" targetId="e151-b10e-7b8a-9a5d"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Rearing Attack" hidden="false" id="883f-189c-9120-b54f" type="selectionEntry" targetId="ae7b-2624-1525-5f6d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d05-77ec-b2ea-1498"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="40c2-b092-e505-d76c"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+    <selectionEntry type="unit" import="true" name="Mgalekgolo" hidden="false" id="d13f-f8e6-fbf4-d959">
       <profiles>
         <profile name="Mgalekgolo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c5ea-7beb-bf1a-4b7c">
           <characteristics>
@@ -584,41 +477,11 @@ The options available for attachment are:
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
-        <profile name="Bonded for Life" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="29c7-b95b-86d2-f9ec">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Mgalekgolo units are immune to any effects that would allow a unit to regain models through healing. However, they may still regain lost wounds through other healing effects.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Bonded Pair" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b0ac-4c40-3c76-ce34">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the game, if this unit has more than 2 models in the formation (options being 2, 4, or 6, if led by a Swarm Lord), bonded pairs are formed as follows:
-
-
-- If the unit has two models, they are always considered a bonded pair.
-- If the unit has four models, the unit will have letters to show which two are bonded together.
-- In the rare case of six models led by a Swarm Lord, the Swarm Lord is always bonded to itself, as the Swarm Lord itself consists of two models.
-
-- When a bonded partner dies, the surviving bonded partner separates from the unit and becomes its own unit. The surviving unit is now &quot;Enraged,&quot; and its Movement, Melee Weapon Attacks, and Strength are increased by +2.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Joints in the Armor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a15b-18c4-752c-3722">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a second or additional enemy unit makes ranged attacks while within 6&quot; of this unit during the same phase, this Mgalekgolo unit&apos;s Toughness is reduced to 3 for the duration of those attacks when resolving them.
-
-This unit has a -2 penalty to saving throws against attacks made with the Torrent keyword.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Rearing Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8e6d-4f67-5aa4-fbbb">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The Mgalekgolo may make a special melee attack with Rearing Strike if there are two or more enemy units within engagement range or if the enemy unit has 10 or more models.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Fights First" id="7044-65f0-ccca-74ae" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
-        <infoLink name="Those Who Walk the Path" id="3b53-50fa-5c1f-a57a" hidden="false" type="rule" targetId="410c-d799-a566-88ca"/>
-        <infoLink name="Invulnerable Save (5+)" id="71ed-1ba7-38ff-e19b" hidden="false" type="profile" targetId="71ad-59b7-bc3b-9260"/>
-      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c177-5fb8-b252-9472-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c177-5fb8-b252-9472-max"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sangheili Honor Guardsman" hidden="false" id="6e4b-8872-df6d-4659">
       <profiles>
@@ -3553,7 +3416,7 @@ This model and its transport complement do not count toward the total number of 
         <infoLink name="Devastating Wounds" id="4ab0-ada2-cca7-1e54" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Spiker" hidden="false" id="36b7-10c9-eda7-e7fc">
+    <selectionEntry type="upgrade" import="true" name="Spiker" hidden="false" id="36b7-10c9-eda7-e7fc" collective="true">
       <profiles>
         <profile name="Spiker (Ranged)" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9f42-e140-eb78-091d">
           <characteristics>
@@ -3798,6 +3661,7 @@ This model and its transport complement do not count toward the total number of 
         <infoLink name="Torrent" id="bcf1-1443-5705-e7ae" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
         <infoLink name="Heavy" id="53f5-2acd-88f8-a85d" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
       </infoLinks>
+      <comment>Scarab Nose Weapon</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ultra-Heavy Plasma Cannon" hidden="false" id="e411-cf54-3a55-d192">
       <profiles>
@@ -3822,6 +3686,7 @@ This model and its transport complement do not count toward the total number of 
         <infoLink name="Lethal Hits" id="21d4-67d6-8ac0-7a08" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
         <infoLink name="Heavy" id="7d2b-d22e-ccfc-392d" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
       </infoLinks>
+      <comment>Scarab Top Weapon</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="dbea-3315-52b2-8364">
       <profiles>
@@ -3883,6 +3748,559 @@ This model and its transport complement do not count toward the total number of 
         <infoLink name="Precision" id="932c-7b95-f70b-d6a7" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mauler " hidden="false" id="c66c-df66-e929-e240" collective="true">
+      <profiles>
+        <profile name="Mauler (Melee)" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8b7b-e79c-3f57-321a">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+        <profile name="Mauler (Ranged)" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e6b6-7236-9872-00ad">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Devastating Wounds, Melta 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" id="bd2c-0300-619d-f242" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Assault" id="c7f4-1462-81f7-9270" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+        <infoLink name="Melta" id="28f0-21d1-95e1-b8c5" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849">
+          <modifiers>
+            <modifier type="append" value="2" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Lobber" hidden="false" id="da14-adf1-ea9d-a833">
+      <profiles>
+        <profile name="Death Lobber" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="586c-c169-9c30-5237">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry +3, Blast, Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Death Lobber" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3f31-334f-c738-71f4">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">5+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Anti-" id="c730-d4f3-5284-211c" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+        <infoLink name="Blast" id="7ab1-f26d-b3c4-3c52" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Lethal Hits" id="51a4-97cf-6a92-9adb" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Korva-pattern Flak Launcher" hidden="false" id="3ba6-587a-345a-eb8f">
+      <comment>H3 Fuel Rod</comment>
+      <profiles>
+        <profile name="Fuel Rod Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b978-720f-f496-be15">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Bouncing Trajectory, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="813d-d351-56c4-a7fb" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Bouncing Trajectory:" id="d564-937e-1310-6867" hidden="false" type="rule" targetId="9bc0-9b19-a361-4fc4"/>
+        <infoLink name="Heavy" id="df7d-9006-0fc0-b773" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zasqi-pattern Flak Launcher" hidden="false" id="8a7b-678c-4950-c832">
+      <comment>H-CE Fuel Rod</comment>
+      <profiles>
+        <profile name="Fuel Rod Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3ac0-fdba-fe10-99da">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Bouncing Trajectory, Devastating Wounds, Hazardous, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="237c-0646-0161-7c72" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Bouncing Trajectory:" id="0e65-1271-d5b2-3378" hidden="false" type="rule" targetId="9bc0-9b19-a361-4fc4"/>
+        <infoLink name="Heavy" id="f115-3b96-23fc-4d0f" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Devastating Wounds" id="0665-d8ed-e483-3485" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Hazardous" id="6c1c-7e8f-fc78-6714" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kopasa&apos;mada-pattern Firebomb Launcher" hidden="false" id="6af3-d280-39dc-39bc">
+      <profiles>
+        <profile name="Plasma Launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2dce-6243-7a5f-f684">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Blast, Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Target Guidence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6d57-6472-7636-e9e0">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Re-roll Missed Hits</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="005a-bf4c-d810-99d4" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Blast" id="03a3-bf66-e546-2515" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Twin-linked" id="1241-3197-635a-3996" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Elo&apos;Nakada-pattern Firebomb Launcher" hidden="false" id="af10-33d9-1de2-1ee9">
+      <profiles>
+        <profile name="Concussion Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ba02-f80b-a1cb-07dc">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Knockback" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d52d-f034-6228-bf66">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an attack made with this weapon scores a hit, the target unit suffers a -1D4 penalty to their Charge rolls until the end of your opponent&apos;s next turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="1fe6-01a7-4798-bbec" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nahle&apos;hax-pattern Needle Launcher" hidden="false" id="e027-0cf9-9dee-937d">
+      <comment>Needler</comment>
+      <profiles>
+        <profile name="Needler" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="34a5-af30-c090-19b3">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Super Combine 7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Super Combine" id="ea0e-7fd6-4ffa-5fc0" hidden="false" type="rule" targetId="d1bb-0e00-b997-059f">
+          <modifiers>
+            <modifier type="append" value="7" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gadulo-pattern Needle Launcher" hidden="false" id="2f3d-9880-f134-c05c">
+      <comment>Needle Rifle</comment>
+      <profiles>
+        <profile name="Needler" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0729-21d0-c477-adb3">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Super Combine 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Super Combine" id="f1ba-41b8-dd50-53f1" hidden="false" type="rule" targetId="d1bb-0e00-b997-059f">
+          <modifiers>
+            <modifier type="append" value="3" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mgalekgolo Bonded Pair" hidden="false" id="0cd0-937b-54e1-d33c">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="614b-b08e-b6e8-a999" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (5+)" id="f9cf-fe0b-120e-bb4e" hidden="false" type="profile" targetId="71ad-59b7-bc3b-9260"/>
+        <infoLink name="Those Who Walk the Path" id="3b53-50fa-5c1f-a57a" hidden="false" type="rule" targetId="410c-d799-a566-88ca"/>
+        <infoLink name="Fights First" id="7044-65f0-ccca-74ae" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Rearing Strike" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2530-21d7-071d-9731">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The Mgalekgolo may make a special melee attack with Rearing Strike if there are two or more enemy units within engagement range or if the enemy unit has 10 or more models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Joints in the Armor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b7e4-1763-157a-1f63">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a second or additional enemy unit makes ranged attacks while within 6&quot; of this unit during the same phase, this Mgalekgolo unit&apos;s Toughness is reduced to 3 for the duration of those attacks when resolving them.
+
+This unit has a -2 penalty to saving throws against attacks made with the Torrent keyword.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bonded Pair" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9698-1727-0ed2-d060">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the game, if this unit has more than 2 models in the formation (options being 2, 4, or 6, if led by a Swarm Lord), bonded pairs are formed as follows:
+
+
+- If the unit has two models, they are always considered a bonded pair.
+- If the unit has four models, the unit will have letters to show which two are bonded together.
+- In the rare case of six models led by a Swarm Lord, the Swarm Lord is always bonded to itself, as the Swarm Lord itself consists of two models.
+
+- When a bonded partner dies, the surviving bonded partner separates from the unit and becomes its own unit. The surviving unit is now &quot;Enraged,&quot; and its Movement, Melee Weapon Attacks, and Strength are increased by +2.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bonded for Life" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3b87-350b-3059-d57d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Mgalekgolo units are immune to any effects that would allow a unit to regain models through healing. However, they may still regain lost wounds through other healing effects.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Monster" hidden="false" id="cc0e-86c7-8260-fbac" targetId="9693-cf84-fe69-37a9" primary="true"/>
+        <categoryLink name="Great Devourer" hidden="false" id="b62d-8a53-f5cd-56e5" targetId="7850-cc5a-c191-b80d" primary="false"/>
+        <categoryLink type="category" name="Carnifexes" hidden="false" id="339a-ffaf-0632-5cbf" targetId="2070-d263-505a-48cc" primary="false"/>
+        <categoryLink name="Faction: Tyranids" hidden="false" id="b887-0652-4c92-d1bc" targetId="d1d8-6ae0-1be7-e9e" primary="false"/>
+      </categoryLinks>
+      <comment>Carnifexes Template</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Bond Brothers" id="4193-e003-e8f5-528d" hidden="false" defaultSelectionEntryId="0381-edf6-67d1-e5cb">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="One Bonded Pair" hidden="false" id="0381-edf6-67d1-e5cb">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hunters" id="5db0-a379-81fb-4d32" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Hunter B" hidden="false" id="231b-5d84-424e-afc8" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e1c-0978-f755-3036-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e1c-0978-f755-3036-max"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mgalekgolo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1571-3638-aa5c-33a3">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Hunter A" hidden="false" id="388c-06ad-7a6b-d754" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b00f-e438-f41f-75fd-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b00f-e438-f41f-75fd-max"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mgalekgolo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f55e-f1bd-d0fb-578b">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Weapon Options" id="380d-7682-f052-325d" hidden="false" defaultSelectionEntryId="6054-a6f4-6c85-0422">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Ranged Options" id="9c4b-43fd-90e5-bea8" hidden="false" defaultSelectionEntryId="367f-c233-fb82-c688" sortIndex="3">
+                      <entryLinks>
+                        <entryLink import="true" name="Assault cannon (Automatic fire)" hidden="false" id="0406-8bce-c49f-05e2" type="selectionEntry" targetId="bce9-dbaa-ef4c-0fa1" sortIndex="1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77d1-d727-0592-eae6" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Assault cannon (Continuous Stream)" hidden="false" id="e0e5-98e5-df7a-2568" type="selectionEntry" targetId="e367-fb3f-64e5-b525" sortIndex="2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1760-5752-cf5e-990e" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Assault cannon (Single Bolts)" hidden="false" id="367f-c233-fb82-c688" type="selectionEntry" targetId="c619-37e1-d9aa-cfa4" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9286-c90c-fe3c-a682" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="860f-a483-4ce6-695c"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57e4-ddbd-09b1-cc0c"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Melee Options" id="809e-640f-23d3-979b" hidden="false" defaultSelectionEntryId="aca7-3bcc-10ea-cdc6" sortIndex="2">
+                      <entryLinks>
+                        <entryLink import="true" name="Two-Ton Nanolaminate Pavise Shield " hidden="false" id="aca7-3bcc-10ea-cdc6" type="selectionEntry" targetId="c9f1-3f71-ba57-c3b4" sortIndex="1"/>
+                        <entryLink import="true" name="Two-Ton Nanolaminate Turtle Shield" hidden="false" id="01e5-46be-cbb2-f155" type="selectionEntry" targetId="e151-b10e-7b8a-9a5d" sortIndex="2"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b63f-f01d-5e3b-17bf"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffea-1e5d-3290-2e58"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Rearing Attack" hidden="false" id="6054-a6f4-6c85-0422" type="selectionEntry" targetId="ae7b-2624-1525-5f6d" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d52f-0e09-5f29-f777"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="46f5-9f2d-f381-35a9"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Diplomatic Power" typeId="cc2f-7d46-da1c-9972" value="0"/>
+                <cost name="Military Power" typeId="b191-77aa-fc76-00cd" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two Bonded Pairs" hidden="false" id="e857-d389-02cf-0c00">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hunters A" id="ffa4-7712-e152-b592" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Hunter A" hidden="false" id="7b64-cee2-f6c3-13cc" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdc1-8bc1-921a-cea2-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdc1-8bc1-921a-cea2-max"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mgalekgolo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d87a-4ffc-c575-00b9">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Hunter A" hidden="false" id="7694-b611-ae7d-b96c" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="697e-1b1d-1f14-161d-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="697e-1b1d-1f14-161d-max"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mgalekgolo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a740-f205-a791-440c">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Options" id="02b7-e10b-0bfa-38af" hidden="false" defaultSelectionEntryId="01a2-89e7-6392-1767" sortIndex="3">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Melee Options" id="7baf-a205-65fe-a6ab" hidden="false" defaultSelectionEntryId="f470-135b-89b7-08e8" sortIndex="2">
+                          <entryLinks>
+                            <entryLink import="true" name="Two-Ton Nanolaminate Pavise Shield " hidden="false" id="f470-135b-89b7-08e8" type="selectionEntry" targetId="c9f1-3f71-ba57-c3b4"/>
+                            <entryLink import="true" name="Two-Ton Nanolaminate Turtle Shield" hidden="false" id="83da-6fae-1db7-e41c" type="selectionEntry" targetId="e151-b10e-7b8a-9a5d"/>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="36f3-16c1-23e7-102a"/>
+                            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="e5bf-7dc7-9b99-c950"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Ranged Options" id="1243-7972-34a1-a5f6" hidden="false" defaultSelectionEntryId="4fde-93d0-d3cf-dda0" sortIndex="3">
+                          <entryLinks>
+                            <entryLink import="true" name="Assault cannon (Automatic fire)" hidden="false" id="4ad4-aae9-bb34-ff13" type="selectionEntry" targetId="bce9-dbaa-ef4c-0fa1">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1ec4-509d-fe9f-0a09" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Assault cannon (Continuous Stream)" hidden="false" id="a4d2-44ef-7f98-667f" type="selectionEntry" targetId="e367-fb3f-64e5-b525">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="6a6d-e9fe-a2af-fd85" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Assault cannon (Single Bolts)" hidden="false" id="4fde-93d0-d3cf-dda0" type="selectionEntry" targetId="c619-37e1-d9aa-cfa4">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="f5bb-c507-7ad2-371a" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a21c-cd2f-d38a-5eda"/>
+                            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="776a-80b6-eb2f-0d07"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <entryLinks>
+                        <entryLink import="true" name="Rearing Attack" hidden="false" id="01a2-89e7-6392-1767" type="selectionEntry" targetId="ae7b-2624-1525-5f6d" sortIndex="1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="cec4-db48-1558-64e5"/>
+                            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="5364-95f7-f01c-c2b0"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Hunters B" id="f51e-7b3b-39db-0770" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Hunter B" hidden="false" id="caf6-a62f-f778-699c" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ce-1b96-46f0-e989-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ce-1b96-46f0-e989-max"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mgalekgolo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a7b3-b4e4-c794-7beb">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Hunter B" hidden="false" id="210d-2520-d978-d922" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8376-258c-b70e-41d7-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8376-258c-b70e-41d7-max"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mgalekgolo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9c33-6bed-491a-6284">
+                          <characteristics>
+                            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+                            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">12</characteristic>
+                            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Options" id="944d-ca7f-4531-7c53" hidden="false" defaultSelectionEntryId="e4aa-af21-7599-fc1a" sortIndex="3">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Ranged Options" id="6ffe-b5be-5e67-10f5" hidden="false" defaultSelectionEntryId="6a29-8985-59a9-ba9e">
+                          <entryLinks>
+                            <entryLink import="true" name="Assault cannon (Automatic fire)" hidden="false" id="e7ed-86bd-a10e-327e" type="selectionEntry" targetId="bce9-dbaa-ef4c-0fa1">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="32fd-8cf9-bc73-d2cf" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Assault cannon (Continuous Stream)" hidden="false" id="d739-d697-5475-7abb" type="selectionEntry" targetId="e367-fb3f-64e5-b525">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a4c3-9d4b-2251-9463" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Assault cannon (Single Bolts)" hidden="false" id="6a29-8985-59a9-ba9e" type="selectionEntry" targetId="c619-37e1-d9aa-cfa4">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="0a7a-2849-eefb-f668" includeChildSelections="false"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="b83d-5b87-65c7-f874"/>
+                            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="b15b-9270-f555-c8e1"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                        <selectionEntryGroup name="Melee Options" id="1511-1cec-a49e-b3c2" hidden="false" defaultSelectionEntryId="2ff9-b237-020d-1b57">
+                          <entryLinks>
+                            <entryLink import="true" name="Two-Ton Nanolaminate Pavise Shield " hidden="false" id="2ff9-b237-020d-1b57" type="selectionEntry" targetId="c9f1-3f71-ba57-c3b4"/>
+                            <entryLink import="true" name="Two-Ton Nanolaminate Turtle Shield" hidden="false" id="b28d-78f7-fd47-9cb5" type="selectionEntry" targetId="e151-b10e-7b8a-9a5d"/>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="fd23-8261-e8e7-b0e8"/>
+                            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="5bb2-a983-be36-fb4d"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <entryLinks>
+                        <entryLink import="true" name="Rearing Attack" hidden="false" id="e4aa-af21-7599-fc1a" type="selectionEntry" targetId="ae7b-2624-1525-5f6d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="61c5-c97d-1684-4e43"/>
+                            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="31d1-35d5-655d-e648"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cc4-0a70-b675-7017"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c329-630d-bf7e-c0cb"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="210" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="e857-d389-02cf-0c00" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Diplomatic Power" typeId="cc2f-7d46-da1c-9972" value="0"/>
+        <cost name="Military Power" typeId="b191-77aa-fc76-00cd" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="High Prophet of Dignity" id="bf66-ccb1-03f3-24d8" hidden="false"/>
@@ -3915,7 +4333,6 @@ This model and its transport complement do not count toward the total number of 
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="High Prophet of Dignity" hidden="false" id="9790-ec3d-bcf7-bfcf" type="selectionEntry" targetId="3b57-446c-594d-8c85"/>
-    <entryLink import="true" name="Mgalekgolo Bonded Pair" hidden="false" id="ca9f-e129-a2ac-0d08" type="selectionEntry" targetId="4eb9-1502-c5bf-ab85"/>
     <entryLink import="true" name="Honor Guard Detail - Sangheili" hidden="false" id="f90a-5f85-b8d7-c11c" type="selectionEntry" targetId="1dab-a2aa-6641-d9a9"/>
     <entryLink import="true" name="Sangheili Shipmaster" hidden="false" id="9fcc-3dc5-2abd-95fd" type="selectionEntry" targetId="d28f-e01b-eec0-0a95"/>
     <entryLink import="true" name="Sangheili Field Marshal" hidden="false" id="5f16-2a57-083e-4eb5" type="selectionEntry" targetId="cfb0-f6fb-f7d2-807b"/>
@@ -3936,7 +4353,8 @@ This model and its transport complement do not count toward the total number of 
     <entryLink import="true" name="Lance - Jiralhanae" hidden="false" id="2a65-889a-f205-955a" type="selectionEntry" targetId="ecbe-3753-edfe-b713"/>
     <entryLink import="true" name="Jiralhanae Alpha" hidden="false" id="6bd5-7ff7-8a46-407b" type="selectionEntry" targetId="3c4d-99b1-88a7-bdab"/>
     <entryLink import="true" name="Huragok Builder Rate" hidden="false" id="b8c2-2b10-4840-d438" type="selectionEntry" targetId="7d84-cecc-0c34-6bdb"/>
-    <entryLink import="true" name="Deutoros-pattern Fortress Breaker" hidden="false" id="2179-5868-f152-7173" type="selectionEntry" targetId="6045-f4a3-0a0a-10bc"/>
+    <entryLink import="true" name="Scarab" hidden="false" id="2179-5868-f152-7173" type="selectionEntry" targetId="6045-f4a3-0a0a-10bc"/>
+    <entryLink import="true" name="Mgalekgolo Bonded Pair" hidden="false" id="e4e1-05c1-38d0-cf84" type="selectionEntry" targetId="0cd0-937b-54e1-d33c"/>
   </entryLinks>
   <profileTypes>
     <profileType name="Assimilation Abilities" id="e03e-687f-056a-c083" hidden="false">
@@ -4088,8 +4506,13 @@ Unggoy Deacons (if no other High Command units are fielded).</description>
 
 ■ On a 2-5, that weapon cannot be fired again until the end of your next Shooting phase.
 
-
 ■On a 6, the weapon cannot be fired again until the end of your next Shooting phase, and the model suffers 1 mortal wound.</description>
+    </rule>
+    <rule name="Bouncing Trajectory:" id="9bc0-9b19-a361-4fc4" hidden="false">
+      <description>Each time an attack made with this weapon misses its target, roll a D6. On an unmodified roll of 6, select one unit within 3&quot; of the original target. That unit must roll a save as if it was wounded by the attack. Cover cannot be used for this save.</description>
+    </rule>
+    <rule name="Super Combine" id="d1bb-0e00-b997-059f" hidden="false">
+      <description>If X or more attacks made with this weapon hit, ignore the hit roll and saving throws (except for Feel No Pain). Instead, the weapon immediately deals X mortal wounds to any non-vehicle or battlesuit unit it hit.</description>
     </rule>
   </sharedRules>
 </catalogue>
