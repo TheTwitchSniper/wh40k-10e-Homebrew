@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="High Prophet of Dignity" hidden="false" id="3b57-446c-594d-8c85">
       <categoryLinks>
@@ -2764,6 +2764,18 @@ If this Model is in an multi-species unit, that unit is considered to have cover
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="War Gear Options" id="a3c8-8648-4cc6-c61d" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab0f-1a43-0073-ebc5-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab0f-1a43-0073-ebc5-max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="M&apos;tara-pattern Fire Rifle" hidden="false" id="25da-b040-b02a-ebaf" type="selectionEntry" targetId="661a-fbe4-4a4f-14cd"/>
+                    <entryLink import="true" name="Sulok-pattern Long Rifle" hidden="false" id="f3ee-0f2a-3738-9602" type="selectionEntry" targetId="b922-5491-f4f1-74c7"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Sangheili And Kig-Yar" hidden="false" id="ff2b-f6d9-09f2-d220">
               <entryLinks>
@@ -3820,6 +3832,46 @@ This model and its transport complement do not count toward the total number of 
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sulok-pattern Long Rifle" hidden="false" id="b922-5491-f4f1-74c7">
+      <profiles>
+        <profile name="Sulok-pattern Long Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="662b-c539-cc53-0ec2">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Precision</characteristic>
+          </characteristics>
+          <alias>Beam Rifle</alias>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Anti-" id="846b-c469-3cc7-68c7" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+        <infoLink name="Precision" id="5e81-e2f9-8762-7068" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M&apos;tara-pattern Fire Rifle" hidden="false" id="661a-fbe4-4a4f-14cd">
+      <profiles>
+        <profile name="Sulok-pattern Long Rifle" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b7f5-9808-1581-14c1">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Vehicle 2+, Sustained Hits D6</characteristic>
+          </characteristics>
+          <alias>Focus Rifle</alias>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Anti-" id="efd8-ecfc-376a-8360" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+        <infoLink name="Precision" id="932c-7b95-f70b-d6a7" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
