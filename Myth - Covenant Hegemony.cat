@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="High Prophet of Dignity" hidden="false" id="3b57-446c-594d-8c85">
       <categoryLinks>
@@ -1035,14 +1035,9 @@ Any unit with the Character or Epic Hero keywords may be attached as the leader 
         <categoryLink name="Character" hidden="false" id="ac7a-2f1a-7b70-69fb" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Sangheili General" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="dfa7-8322-09d0-4284">
+        <profile name="Bond of the Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bbe5-97b6-9932-9821">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, during the Fight phase, this unit and one friendly Covenant unit within 6&quot; gain +1 to Strength and Attack characteristics for melee weapons until the end of the phase.</characteristic>
           </characteristics>
         </profile>
         <profile name="Command Presence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca1f-2fd1-8f23-2c02">
@@ -1050,11 +1045,6 @@ Any unit with the Character or Epic Hero keywords may be attached as the leader 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can lead a Covenant Hegemony Infantry unit. While leading that unit:
 
 • Models in the unit gain +1 to Hit for ranged attacks.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Strategic Overwatch" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c84-82d9-1117-ce52">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">All friendly Covenant units within 6&quot; of this model may re-roll Wound rolls of 1 against enemy units within range of an objective marker.</characteristic>
           </characteristics>
         </profile>
         <profile name="Relentless Execution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9e38-9648-0e58-4161">
@@ -1068,15 +1058,15 @@ Any unit with the Character or Epic Hero keywords may be attached as the leader 
 • If this model is leading a unit, apply this bonus to all weapons equipped by models in that unit instead.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Bond of the Commander" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bbe5-97b6-9932-9821">
+        <profile name="Strategic Overwatch" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c84-82d9-1117-ce52">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, during the Fight phase, this unit and one friendly Covenant unit within 6&quot; gain +1 to Strength and Attack characteristics for melee weapons until the end of the phase.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">All friendly Covenant units within 6&quot; of this model may re-roll Wound rolls of 1 against enemy units within range of an objective marker.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Leader" id="9429-1339-f309-f4c9" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
         <infoLink name="Those Who Walk the Path" id="5ae1-9c9d-219e-2bff" hidden="false" type="rule" targetId="410c-d799-a566-88ca"/>
+        <infoLink name="Leader" id="9429-1339-f309-f4c9" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
@@ -1090,31 +1080,47 @@ Any unit with the Character or Epic Hero keywords may be attached as the leader 
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3f08-de32-43bf-281a"/>
       </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="War Gear Options" id="d120-f7a9-cff3-e11f" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sangheili General" hidden="false" id="e1b7-d6e5-f468-9043">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Melee" id="e696-67d8-e23e-7393" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Energy Dagger" hidden="false" id="ddb2-2e1a-20a5-db1c" type="selectionEntry" targetId="afc6-597e-bb0e-9976"/>
-                <entryLink import="true" name="Energy Sword" hidden="false" id="ea38-e649-2314-d017" type="selectionEntry" targetId="d23b-c204-e1d6-0753"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03cb-ff7a-122c-3270"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29c3-d2e6-9dcc-5454"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Ranged" id="9a15-0566-795d-594c" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Plasma Rifle" hidden="false" id="eb53-7291-561a-4125" type="selectionEntry" targetId="e7bc-2ecb-b7e0-4c3a"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9df7-30d9-1da1-889b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a43-5323-860e-c31c"/>
-              </constraints>
+            <selectionEntryGroup name="War Gear Options" id="d120-f7a9-cff3-e11f" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee" id="e696-67d8-e23e-7393" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Energy Dagger" hidden="false" id="ddb2-2e1a-20a5-db1c" type="selectionEntry" targetId="afc6-597e-bb0e-9976"/>
+                    <entryLink import="true" name="Energy Sword" hidden="false" id="ea38-e649-2314-d017" type="selectionEntry" targetId="d23b-c204-e1d6-0753"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03cb-ff7a-122c-3270"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29c3-d2e6-9dcc-5454"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Ranged" id="9a15-0566-795d-594c" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Plasma Rifle" hidden="false" id="eb53-7291-561a-4125" type="selectionEntry" targetId="e7bc-2ecb-b7e0-4c3a"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e04-ce9f-3f40-0e6c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87e3-a296-d517-7e91"/>
+          </constraints>
+          <profiles>
+            <profile name="Sangheili General" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="dfa7-8322-09d0-4284">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sangheili Special Operations Officer" hidden="false" id="2dc6-96ee-4643-db3b">
       <categoryLinks>
@@ -3378,7 +3384,7 @@ If this Model is in an multi-species unit, that unit is considered to have cover
         <infoLink name="Anti-" id="abcc-4044-029b-e47e" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Deutoros-pattern Fortress Breaker" hidden="false" id="6045-f4a3-0a0a-10bc">
+    <selectionEntry type="unit" import="true" name="Scarab" hidden="false" id="6045-f4a3-0a0a-10bc">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="640"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
@@ -3390,14 +3396,17 @@ If this Model is in an multi-species unit, that unit is considered to have cover
       </costs>
       <comment>Scarab H3</comment>
       <profiles>
-        <profile name="Deutoros-pattern Fortress Breaker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3ec3-3ea1-c442-b94e">
+        <profile name="Elevated Command Platform" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b2f-8a1e-8a12-a711">
           <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">30</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">12</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, you may select one Character model (excluding your Warlord) and place it aboard this model. While aboard, the Character cannot disembark for any reason:
+
+■ Any Aura abilities, Commander abilities, or passive effects granted by the Character apply to this model instead of the Character. The abilities originate from the Scarab as though it were the Character.
+■ If this model is destroyed, the Character is also destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hollow Fortress" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="69e6-7a22-84a4-4146">
+          <characteristics>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 20 Covenant Infantry models. Each Jiralhanae and Sangheili model takes up the space of 2 models.</characteristic>
           </characteristics>
         </profile>
         <profile name="Living Fortress" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="016f-6480-e95d-f1f5">
@@ -3409,24 +3418,11 @@ If this Model is in an multi-species unit, that unit is considered to have cover
 ■ If this model&apos;s wounds remain at 1-10, repeat the regeneration process at the end of each turn until the condition is met.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Hollow Fortress" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="69e6-7a22-84a4-4146">
-          <characteristics>
-            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 20 Covenant Infantry models. Each Jiralhanae and Sangheili model takes up the space of 2 models.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Low Orbital Deployment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="70c1-2749-e35b-102d">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During the Declare Battle Formations step, if this model and all models in its transport complement have this ability, you can set it up in Strategic Reserves instead of on the battlefield.
 
 This model and its transport complement do not count toward the total number of units placed in Strategic Reserves.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Elevated Command Platform" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9b2f-8a1e-8a12-a711">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle, you may select one Character model (excluding your Warlord) and place it aboard this model. While aboard, the Character cannot disembark for any reason:
-
-■ Any Aura abilities, Commander abilities, or passive effects granted by the Character apply to this model instead of the Character. The abilities originate from the Scarab as though it were the Character.
-■ If this model is destroyed, the Character is also destroyed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3445,7 +3441,7 @@ This model and its transport complement do not count toward the total number of 
         <infoLink name="Deep Strike" id="2aef-1d7c-8cb9-c6b5" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="999f-4352-121d-b00a" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="999f-4352-121d-b00a" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Faction: Covenant Hegemony" hidden="false" id="023e-e34f-98af-1e1a" targetId="39fd-e63f-f604-efb6" primary="false"/>
@@ -3454,25 +3450,39 @@ This model and its transport complement do not count toward the total number of 
         <categoryLink name="Titanic" hidden="false" id="4d54-0955-ad54-cf97" targetId="5929-ad51-d006-e008" primary="false"/>
         <categoryLink name="Vehicle" hidden="false" id="a2c3-b9d8-0617-e844" targetId="dbd4-63-af05-998" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Armament" id="e933-5ed0-734b-17c2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Deutoros-pattern Fortress Breaker" hidden="false" id="079b-9526-99c3-c29a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4046-72fc-7f0c-e3c6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2013-8979-a0c0-d255"/>
+          </constraints>
+          <profiles>
+            <profile name="Deutoros-pattern Fortress Breaker" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3ec3-3ea1-c442-b94e">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">14</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">30</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <entryLinks>
             <entryLink import="true" name="Ultra-Heavy Focus Cannon" hidden="false" id="be96-0de3-d2f7-8c26" type="selectionEntry" targetId="a7dd-5a97-21a7-0b28">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="478c-88a7-bdac-60b2-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="478c-88a7-bdac-60b2-max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7014-74bd-f9e5-bbed" includeChildSelections="true"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Ultra-Heavy Plasma Cannon" hidden="false" id="ae4f-8f41-0117-bec4" type="selectionEntry" targetId="e411-cf54-3a55-d192">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a15-94e1-134b-44fc-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a15-94e1-134b-44fc-max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b6c-7b1c-23b6-4896" includeChildSelections="true"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Plasma Cannon" hidden="false" id="3309-1712-120b-c8e9" type="selectionEntry" targetId="dbea-3315-52b2-8364">
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0f0d-66f1-c3e2-9830-min"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0f0d-66f1-c3e2-9830-max"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0f0d-66f1-c3e2-9830-min" includeChildSelections="true"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0f0d-66f1-c3e2-9830-max" includeChildSelections="true"/>
               </constraints>
               <profiles>
                 <profile name="Manual Operation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca02-06a1-c199-f194">
@@ -3483,8 +3493,8 @@ This model and its transport complement do not count toward the total number of 
               </profiles>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="09d9-0b35-afdf-615d">
       <profiles>
@@ -3926,11 +3936,7 @@ This model and its transport complement do not count toward the total number of 
     <entryLink import="true" name="Lance - Jiralhanae" hidden="false" id="2a65-889a-f205-955a" type="selectionEntry" targetId="ecbe-3753-edfe-b713"/>
     <entryLink import="true" name="Jiralhanae Alpha" hidden="false" id="6bd5-7ff7-8a46-407b" type="selectionEntry" targetId="3c4d-99b1-88a7-bdab"/>
     <entryLink import="true" name="Huragok Builder Rate" hidden="false" id="b8c2-2b10-4840-d438" type="selectionEntry" targetId="7d84-cecc-0c34-6bdb"/>
-    <entryLink import="true" name="Deutoros-pattern Fortress Breaker" hidden="false" id="2179-5868-f152-7173" type="selectionEntry" targetId="6045-f4a3-0a0a-10bc">
-      <modifiers>
-        <modifier type="set" value="Scarab" field="name"/>
-      </modifiers>
-    </entryLink>
+    <entryLink import="true" name="Deutoros-pattern Fortress Breaker" hidden="false" id="2179-5868-f152-7173" type="selectionEntry" targetId="6045-f4a3-0a0a-10bc"/>
   </entryLinks>
   <profileTypes>
     <profileType name="Assimilation Abilities" id="e03e-687f-056a-c083" hidden="false">
