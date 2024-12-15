@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f8d9-2990-15d1-4a63" name="Myths - Covenant Hegemony" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" authorName="Twitch" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="High Prophet of Dignity" hidden="false" id="3b57-446c-594d-8c85">
       <categoryLinks>
@@ -2021,10 +2021,14 @@ Any unit with the Character or Epic Hero keywords may be attached as the leader 
             <entryLink import="true" name="Unggoy Minor" hidden="false" id="1799-e33a-e732-107e" type="selectionEntry" targetId="b6eb-6bb1-bdfc-dcb8">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c2c2-7f45-8c9d-b196-min"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c2c2-7f45-8c9d-b196-max"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c2c2-7f45-8c9d-b196-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unggoy Minors" hidden="false" id="5804-3b89-be74-5166"/>
+            <selectionEntry type="upgrade" import="true" name="Unggoy Heavies" hidden="false" id="9b95-6de3-6c00-82c3"/>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -2045,9 +2049,46 @@ Any unit with the Character or Epic Hero keywords may be attached as the leader 
         <cost name="Military Power" typeId="b191-77aa-fc76-00cd" value="0"/>
       </costs>
       <profiles>
-        <profile name="Expendable Assets" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7dab-5bae-fe83-44a4">
+        <profile name="Cannon Fodder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7dab-5bae-fe83-44a4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit may be attached to any unit that doesn&apos;t have a non-leader unit already attached to it. When determining damage allocation, all damage must be allocated to models in this unit before it is allocated to the unit it is attached to.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is attached to a higher-ranked species (see Hierarchical Leadership for order):
+
+■ Sangheili units in the combined unit gain +1 to Objective Control (OC).
+■ Jiralhanae units in the combined unit gain +1 Wound for models.
+■ Mgalekgolo units in the combined unit do not suffer penalties from the Joints in the Armor ability.
+■ Kig-Yar units in the combined unit gain +1 to Hit rolls for ranged attacks.
+Additionally:
+
+Any damage dealt to the combined unit must be allocated to the Unggoy models first (PRECISION key-word not-included).
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Methane Tanks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5ede-e464-aecf-8fd6">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Unggoy model in this unit is destroyed by a ranged attack with the BLAST keyword or a melee attack, roll a D6:
+
+
+■ On a 5+, before being removed from play, that model deals 1 mortal wound to one enemy unit within 3&quot;.
+■ After resolving the mortal wound, the destroyed model is removed from play</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Levy Attaché" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7c51-318a-77d1-ae5b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Declare Battle Formations step, this unit can join one other friendly Infantry unit that does not already have a Lance or Bodyguard unit attached to it.
+
+If it does:
+
+■ Until the end of the battle, all models in this unit count as being part of that Infantry unit.
+■ The Infantry unit’s Starting Strength is increased by the number of models in this unit.
+Restrictions:
+
+■ Evocati Unggoy may only be attached to Evocati units.
+■ Heavy Unggoy may be attached to Mgalekgolo, Zealots, or Jiralhanae units.
+■ Special-Operations Unggoy may be attached to Spec-Ops, Stalker, or Zealots units. This unit gains the Stealth, Infiltrator, and Deep Strike traits while attached.
+■ Minor Unggoy may be attached to Sangheili, Jiralhanae, or Kig-Yar Lances.
+Limitations:
+
+A unit cannot have more than one Unggoy Levy attached to it at a time.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3994,9 +4035,9 @@ This unit has a -2 penalty to saving throws against attacks made with the Torren
       </profiles>
       <categoryLinks>
         <categoryLink name="Monster" hidden="false" id="cc0e-86c7-8260-fbac" targetId="9693-cf84-fe69-37a9" primary="true"/>
-        <categoryLink name="Great Devourer" hidden="false" id="b62d-8a53-f5cd-56e5" targetId="7850-cc5a-c191-b80d" primary="false"/>
-        <categoryLink type="category" name="Carnifexes" hidden="false" id="339a-ffaf-0632-5cbf" targetId="2070-d263-505a-48cc" primary="false"/>
-        <categoryLink name="Faction: Tyranids" hidden="false" id="b887-0652-4c92-d1bc" targetId="d1d8-6ae0-1be7-e9e" primary="false"/>
+        <categoryLink name="Lekgolo" hidden="false" id="5e7c-526d-9ba2-691a" targetId="ac81-630f-bc46-8571" primary="false"/>
+        <categoryLink name="Walker" hidden="false" id="ee43-0af2-4c25-0c76" targetId="6dda-e157-334d-e93a" primary="false"/>
+        <categoryLink name="Faction: Covenant Hegemony" hidden="false" id="8d04-e1a5-1cbd-3894" targetId="39fd-e63f-f604-efb6" primary="false"/>
       </categoryLinks>
       <comment>Carnifexes Template</comment>
       <selectionEntryGroups>
